@@ -23,15 +23,9 @@ img, div {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 #playButton:hover {
   background-color: #45a049;
-}
-#playButton:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
 .shadow {
   width: 150px;
