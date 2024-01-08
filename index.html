@@ -33,11 +33,10 @@
 </head>
 <body>
   <div class="shadow"></div>
-  <div onclick="audio()">
-    <img id="duck" class="purun" src="animalface_duck.png" width="200" height="200">
-  </div>
+  <img id="duck" class="purun" src="animalface_duck.png" width="200" height="200" onclick="audio()">
   <audio src="duck.mp3" id="btn_audio"></audio>
-  <audio src="sunaarashi.mp3" autoplay loop controls></audio>
+  <audio src="sunaarashi.mp3" autoplay loop></audio>
+  <button id="playButton">再生/一時停止</button>
   <script>
     looopAnimation("duck", "purun", 600);
     function audio() {
