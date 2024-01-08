@@ -11,7 +11,7 @@ img, div {
   bottom: 0;
   margin: auto;
 }
-audio {
+#playButton {
   position: fixed;
   bottom: 10px;
   left:50%;
