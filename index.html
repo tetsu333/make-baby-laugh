@@ -42,7 +42,6 @@
     document.getElementById("playButton").addEventListener("click", function() {
       const sunaarashi = document.getElementById("sunaarashi");
       if (sunaarashi.paused) {
-        sunaarashi.volume = 0.2;
         sunaarashi.play();
       } else {
         sunaarashi.pause();
@@ -50,7 +49,6 @@
     });
     document.getElementById("duck_img").addEventListener("click", function() {
       const duck = document.getElementById("duck_audio");
-      duck.volume = 1.0;
       duck.play();
     });
   </script>
