@@ -33,16 +33,24 @@
 </head>
 <body>
   <div class="shadow"></div>
-  <img id="duck" class="purun" src="animalface_duck.png" width="200" height="200" onclick="audio()">
-  <audio src="duck.mp3" id="btn_audio"></audio>
-  <audio src="sunaarashi.mp3" autoplay loop></audio>
+  <img id="duck_img" class="purun" src="animalface_duck.png" width="200" height="200">
+  <audio src="duck.mp3" id="duck_audio"></audio>
+  <audio src="sunaarashi.mp3" loop id="sunaarashi"></audio>
   <button id="playButton">再生/一時停止</button>
   <script>
     looopAnimation("duck", "purun", 600);
-    function audio() {
-     document.getElementById("btn_audio").currentTime = 0; //連続クリックに対応
-     document.getElementById("btn_audio").play(); //クリックしたら音を再生
-    }
+    document.getElementById("playButton").addEventListener("click", function() {
+      const sunaarashi = document.getElementById("sunaarashi");
+      if (sunaarashi.paused) {
+        sunaarashi.play();
+      } else {
+        sunaarashi.pause();
+      }
+    });
+    document.getElementById("duck_img").addEventListener("click", function() {
+      const duck = document.getElementById("duck_audio");
+      duck.play();
+    });
   </script>
 </body>
 </html>
