@@ -31,7 +31,10 @@
 <body>
   <div class="shadow"></div>
   <img id="duck" class="purun" src="animalface_duck.png" width="200" height="200">
-  <audio controls loop src="za.mp3"></audio>
+  <div style="position: fixed; bottom: 10px; left:50%; transform:translate(-50%, 0); padding:5px; background-color: rgba(247,255,165,0.66); border-radius: 5px; max-width: 300px;">
+  	<p style="text-align: center; font-size: 0.8em; margin-bottom: 5px;">ザーザー音</p>
+  	<audio src="za.mp3" autoplay loop controls></audio>
+  </div>
   <script>
     looopAnimation("duck", "purun", 600);
   </script>
