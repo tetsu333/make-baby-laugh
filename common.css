@@ -11,6 +11,12 @@ img, div {
   bottom: 0;
   margin: auto;
 }
+audio {
+  position: fixed;
+  bottom: 10px;
+  left:50%;
+  transform:translate(-50%, 0);
+}
 .shadow {
   width: 150px;
   height: 150px;
