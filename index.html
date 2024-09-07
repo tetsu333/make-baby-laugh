@@ -41,12 +41,12 @@
 </head>
 <body>
   <div class="shadow"></div>
-  <img id="duck_img" class="purun" src="animalface_duck.png" width="200" height="200">
+  <img id="kyara_img" class="purun" src="yurukyara.PNG" width="200" height="200">
   <audio src="duck.mp3" id="duck_audio"></audio>
   <audio src="sunaarashi.mp3" loop id="sunaarashi"></audio>
   <button id="playButton">再生/一時停止</button>
   <script>
-    looopAnimation("duck_img", "purun", 600);
+    looopAnimation("kyara_img", "purun", 600);
     document.getElementById("playButton").addEventListener("click", function() {
       const sunaarashi = document.getElementById("sunaarashi");
       if (sunaarashi.paused) {
@@ -55,7 +55,7 @@
         sunaarashi.pause();
       }
     });
-    document.getElementById("duck_img").addEventListener("click", function() {
+    document.getElementById("kyara_img").addEventListener("click", function() {
       const img = this;
       img.classList.add("click-animation");
       img.addEventListener("animationend", () => {
