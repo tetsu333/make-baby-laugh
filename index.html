@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="UTF-8"/>
-  <title>砂嵐音</title>
+  <title>赤ちゃん用</title>
   <link rel="icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="152x152" href="animalface_duck.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -43,17 +43,17 @@
   <div class="shadow"></div>
   <img id="kyara_img" class="purun" src="yurukyara.PNG" width="200" height="200">
   <audio src="punyu.mp3" id="punyu_audio"></audio>
-  <audio src="sunaarashi.mp3" loop id="sunaarashi"></audio>
+  <audio src="mofumofutaisou.mp3" loop id="mofumofu"></audio>
   <button id="playButton">再生/一時停止</button>
   <span class="zunda">VOICEVOX:ずんだもん</span>
   <script>
     looopAnimation("kyara_img", "purun", 600);
     document.getElementById("playButton").addEventListener("click", function() {
-      const sunaarashi = document.getElementById("sunaarashi");
-      if (sunaarashi.paused) {
-        sunaarashi.play();
+      const mofumofu = document.getElementById("mofumofu");
+      if (mofumofu.paused) {
+        mofumofu.play();
       } else {
-        sunaarashi.pause();
+        mofumofu.pause();
       }
     });
     document.getElementById("kyara_img").addEventListener("click", function() {
