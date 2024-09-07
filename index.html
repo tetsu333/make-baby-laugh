@@ -42,7 +42,7 @@
 <body>
   <div class="shadow"></div>
   <img id="kyara_img" class="purun" src="yurukyara.PNG" width="200" height="200">
-  <audio src="duck.mp3" id="duck_audio"></audio>
+  <audio src="punyu.mp3" id="punyu_audio"></audio>
   <audio src="sunaarashi.mp3" loop id="sunaarashi"></audio>
   <button id="playButton">再生/一時停止</button>
   <script>
@@ -61,8 +61,8 @@
       img.addEventListener("animationend", () => {
         img.classList.remove("click-animation");
       });
-      const duck = document.getElementById("duck_audio");
-      duck.play();
+      const punyu = document.getElementById("punyu_audio");
+      punyu.play();
     });
   </script>
 </body>
