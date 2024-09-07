@@ -13,7 +13,7 @@ img, div {
 }
 #playButton {
   position: fixed;
-  bottom: 10px;
+  bottom: 40px;
   left:50%;
   transform:translate(-50%, 0);
   background-color: #4CAF50;
@@ -35,4 +35,12 @@ img, div {
   background-color: #e6e1bb;
   transform: scale(1.0, 0.2);
   -webkit-transform: scale(1.0, 0.2);
+}
+.zunda {
+  position: fixed;
+  bottom: 0px;
+  left:50%;
+  transform:translate(-50%, 0);
+  color: #B9D08B;
+  font-size: 12px;
 }
